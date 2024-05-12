@@ -1,0 +1,24 @@
+{
+  "name": "Getting Started Example",
+  "description": "Card kingdom...",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "host_permissions": ["https://*/*"],
+  "action": {
+    "default_title":"Exporter cart from CK",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/ck-header-logo.png",
+      "32": "/images/ck-header-logo.png",
+      "48": "/images/ck-header-logo.png",
+      "128": "/images/ck-header-logo.png"
+    }
+  },
+  "icons": {
+    "16": "/images/ck-header-logo.png",
+    "32": "/images/ck-header-logo.png",
+    "48": "/images/ck-header-logo.png",
+    "128": "/images/ck-header-logo.png"
+  }
+}

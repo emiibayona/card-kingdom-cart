@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <img id="logo" src="./images/ck-header-logo.png" />
+    <div id="header-right">
+      <img id="title" src="./images/ck-header-title.webp" />
+      <span>Community made</span>
+    </div>
+  </div>
+  <div id="cart-body">
+    <div id="wrapper-loader">
+      <div class="loader" id="loader"></div>
+    </div>
+    <button id="reloadBtn" />
+    <button id="setCart"></button>
+    <span id="disclaimer" style="display: none;">This extension only works on the <a id="goToCart">Card Kingdom
+        Cart</a></span>
+
+    <span id="recap"></span>
+    <div id="wrapper">
+      <div id="empty"><img src="./images/cart-arrow-down-solid.svg"/><span>Cart is empty</span></div>
+      <div id="html-content"></div>
+    </div>
+    <button id="exportCart"></button>
+  </div>
+  <footer>
+    <span>This browser extension is intended for non-commercial purposes only. Card Kingdom is not involved in any aspect of this extension. By installing and using this extension, you agree to abide by these terms and uses.  --- May 2024</span>
+    <a id="made" href="https://github.com/emiibayona" target="_blank">Made by Emiliano Bayona</a>
+
+  </footer>
+
+</body>
+
+<script src="popup.js"></script>
+
+
+</html>
