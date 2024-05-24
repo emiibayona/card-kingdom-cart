@@ -1,3 +1,22 @@
+function copy(str) {
+  const el = document.createElement("textarea");
+  el.value = str;
+  el.setAttribute("readonly", "");
+  el.style.position = "absolute";
+  el.style.left = "-9999px";
+  document.body.appendChild(el);
+  const selected =
+    document.getSelection().rangeCount > 0
+      ? document.getSelection().getRangeAt(0)
+      : false;
+  el.select();
+  document.execCommand("copy");
+  document.body.removeChild(el);
+  if (selected) {
+    document.getSelection().removeAllRanges();
+    document.getSelection().addRange(selected);
+  }
+}
 function setCart() {
   const getContent = (container, element) => {
     if (!container) return null;
@@ -92,6 +111,8 @@ document.getElementById("exportCart").addEventListener("click", async () => {
       res += `${x.quantity} ${x.title}\n`;
     });
     navigator.clipboard.writeText(res);
+    // Add support to MAC.
+    copy(str);
     window.open("https://www.cardkingdom.com/builder", "_blank");
   });
 });
