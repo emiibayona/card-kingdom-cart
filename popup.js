@@ -110,9 +110,8 @@ document.getElementById("exportCart").addEventListener("click", async () => {
     cards.forEach((x) => {
       res += `${x.quantity} ${x.title}\n`;
     });
-    navigator.clipboard.writeText(res);
-    // Add support to MAC.
-    copy(str);
+    // Add support to another SOs.
+    copy(res);
     window.open("https://www.cardkingdom.com/builder", "_blank");
   });
 });
